@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --10px: 0.625rem;
+    --16px: 1rem;
+    --24px: 1.5rem;
+    --32px: 2rem;
+    --75px: 5rem;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    padding-top: 3.4rem;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: var(--75px);
+    aspect-ratio: 35 / 4;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    background-color: #0f1d21;
+}
+
+.logo-container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Super Comic', Courier, monospace;
+    min-width: 11rem;
+    cursor: default;
+}
+
+.animate {
+    background-image: linear-gradient(135deg, aqua, teal, cadetblue, mediumseagreen, darkcyan, teal);
+    background-size: 400% 400%;
+    animation: grad 10s ease-in-out infinite;
+    background-clip: text;
+}
+
+#header-img {
+    height: 100%;
+    max-height: var(--75px);
+}
+
+#logo-header {
+    font-size: 1.9em;
+    color: transparent;
+    font-weight: 980;
+}
+
+#logo-subheader {
+    word-break: break-all;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: -1rem;
+    color: transparent;
+}
+
+#header ul {
+    justify-items: flex-end;
+    display: flex;
+    column-gap: 2rem;
+    padding-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: transparent;
+    font-size: larger;
+}
+
+li {
+    list-style: none;
+    justify-content: flex-end;
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow-x: clip;
+    border: none;
+}
+
+#wrapper {
+    background-image:
+    radial-gradient( ellipse at -20% 150%, hsl(186, 99%, 59%) 20%, hsl(214, 82%, 7%) 71%);
+    background-size: 100% 100%;
+    background-position: 17% 34%;
+    background-repeat: no-repeat;
+}
+
+#hero {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    text-align: center;
+}
+
+#hero-image {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#hero-image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#features h2 {
+    margin-left: 2rem;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+#features {
+    width: 97%;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #468b9a;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    justify-content: left;
+    align-items: center;
+    margin-left: 2rem;
+    row-gap: 2rem;
+}
+
+#fifth {
+    grid-column: span 4;
+    display: flex;
+    text-align: justify;
+    justify-self: center;
+    align-items: center;
+    width: 40rem;
+}
+
+.fa-circle-exclamation {
+    margin-right: 2rem;
+}
+
+#grid .description:last-of-type {
+    width: 100%;
+}
+
+i {
+    font-size: var(--32px);
+}
+
+
+.description {
+    width: 30rem;
+}
+
+#form {
+    margin: 2rem;
+}
+
+.text {
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+}
+
+#form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100vh;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+#label {
+    max-width: 40rem;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+}
+
+#pin {
+    margin: 0 auto;
+    max-width: 40rem;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    height: 2rem;
+    width: 8rem;
+}
+
+
+#how-it-works {
+    width: 90rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#how-it-works p {
+    margin-top: 1rem;
+}
+
+.github-link {
+    text-decoration: none;
+    color: wheat;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    background-image: linear-gradient(135deg, aqua, teal, cadetblue, mediumseagreen, darkcyan, teal);
+    background-size: 400% 400%;
+    animation: grad 10s ease-in-out infinite;
+}
+
+@keyframes grad {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
