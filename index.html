@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DigitalSteganography</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div class="logo-container">
+                    <img id="header-img" src="images/logo.png" alt="logo">
+                    <div class="logo-text animate">
+                        <p id="logo-header">StegaSafe</p>
+                        <p id="logo-subheader">Stealthy Sharing</p>
+                    </div>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="#hero" class="nav-link animate">About StegaSafe</a>
+                        </li>
+                        <li> <a href="#features" class="nav-link animate">Features</a></li>
+                        <li> <a href="#how-it-works" class="nav-link animate">How it Works</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            <div class="hero-grid">
+                <div>
+                    <section id="hero">
+                        <!--<h1>Welcome to StegaSafe</h1>-->
+                        <h2>Hide Your Secrets in Plain Sight!</h2>
+                        <p class="text">StegaSafe is a fun and powerful digital steganography tool that lets you conceal your messages, images, and files within everyday digital content. Whether you're looking to add an extra layer of privacy to your communications or just curious about the magic of hidden data, StegaSafe is here to help – and it's totally free!<p>
+                    </section>
+                </div>
+                <div id="hero-image">
+                    <img src="images/HeroImage.png" alt="Hero Image">
+                </div>
+            </div>
+            <div class="container">
+                <section id="features">
+                    <h2>Why StegaSafe?</h2>
+                    <div id="grid">
+                        <!--First-->
+                        <div class="icon">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                        </div>
+                        <div class="description">
+                            <h3>Seamless and Secure</h3>
+                            <p class="text">Effortlessly hide your messages inside images, text, or other files.</p>
+                        </div>
+                        <!--Second-->
+                        <div class="icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div class="description">
+                            <h3>Easy to Use</h3>
+                            <p class="text">Simple drag-and-drop interface – no coding required!</p>
+                        </div>
+                        <!--Third-->
+                        <div class="icon">
+                            <i class="fa-solid fa-comments-dollar"></i>
+                        </div>
+                        <div class="description">
+                            <h3>Completely Free</h3>
+                            <p class="text">We’re offering this tool completely free of charge. Enjoy full access with no strings attached!</p>
+                        </div>
+                        <!--Forth-->
+                        <div class="icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="description">
+                            <h3>Use it For Fun and Learning</h3>
+                            <p class="text">Experiment with steganography, discover the hidden side of data, and share your files with friends.</p>
+                        </div>
+                        <!--Fifth-->
+                        <div id="fifth">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <div class="description">
+                                <h3>For Education Purposes Only</h3>
+                                <p class="text">This project is designed to help you explore and understand steganography in a fun and educational manner. Please use it responsibly to experiment, learn, and share files with friends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="how-it-works">
+                    <p class="text">Thank you for exploring StegaSafe! Whether you're here for fun or learning, this tool is designed to make steganography simple and accessible for everyone.</p>
+                    <p class="text"><strong>Curious about how it works?</strong> <a href="https://github.com/HMByteSensei/Digital-Steganography" class="github-link" target="_blank">Check out the GitHub repository</a> to see the code and contribute!</p>
+                    <p class="text">Or, if you're feeling adventurous, try entering a secret key below!</p>
+                    <form id="form" action="https://github.com/HMByteSensei/Digital-Steganography" method="get" target="_blank">
+                        <label for="pin" id="label">Enter your secret key:</label>
+                        <input id="pin" type="text" required maxlength="4"  placeholder="Enter your 4-digit pin... [XXXX]" name="pincode" pattern="^\d{4}">
+                        <input id="submit" type="submit" value="Unlock">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
